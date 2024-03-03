@@ -96,7 +96,7 @@ export const projectsData = [
   {
     title: "Sitoluhuta Website",
     description:
-      "I worked as a web developer to create a village's website in 50 days. The website is used for introduce the village to the world.",
+      "I worked as a web developer to create a village's website in 50 days. The website is used to introduce the village to the world.",
     tags: ["Wordpress", "HTML", "CSS"],
     imageUrl: desasitoluhutaImg,
   },
