@@ -103,6 +103,7 @@ export default function Intro() {
           target="_blank"
         >
           <BsLinkedin />
+          <span className="sm:hidden">Linkedin</span>
         </a>
 
         <a
@@ -111,6 +112,7 @@ export default function Intro() {
           target="_blank"
         >
           <FaGithubSquare />
+          <span className="sm:hidden">Github</span>
         </a>
       </motion.div>
     </section>
