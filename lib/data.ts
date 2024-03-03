@@ -90,14 +90,14 @@ export const projectsData = [
     title: "ATEGO",
     description:
       "I was a mobile app developer to create a mobile app for completing my thesis. The app is an automated presence system using GPS",
-    tags: ["Flutter", "Dart", "Android", "Firebase", "GPS"],
+    tags: ["Flutter", "Dart", "Firebase"],
     imageUrl: ategoImg,
   },
   {
     title: "Sitoluhuta Website",
     description:
       "I worked as a web developer to create a village's website in 50 days. The website is used for introduce the village to the world.",
-    tags: ["Wordpress", "CSS", "SSL", "SEO"],
+    tags: ["Wordpress", "HTML", "CSS"],
     imageUrl: desasitoluhutaImg,
   },
 
