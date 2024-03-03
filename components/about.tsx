@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm an Information Engineering graduate from Universitas Gadjah Mada,
+        I am an Information Engineering graduate from Universitas Gadjah Mada,
         one of most prestigious univesities in Indonesia with GPA 3.51 out of
         4.00. Throughout my academic journey, I have developed a solid
         foundation in various aspects of information technology, including
@@ -30,8 +30,8 @@ export default function About() {
       </p>
 
       <p>
-        When I'm not coding, I enjoy playing video games, watching movies, and
-        hangout with my friends. I'm currently learning about investment
+        When I am not coding, I enjoy playing video games, watching movies, and
+        hangout with my friends. I am currently learning about investment
         instruments such as stocks and cryptocurrency.
       </p>
     </motion.section>
