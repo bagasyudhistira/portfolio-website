@@ -6,7 +6,7 @@ export default function SubmitBtn() {
   const { pending } = useFormStatus();
   return (
     <button
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[10rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-75 dark:bg-white dark:bg-opacity-80"
+      className="group flex items-center justify-center gap-2 h-[3rem] w-[10rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-75 dark:bg-white/30 dark:bg-opacity-80"
       type="submit"
       disabled={pending}
     >
