@@ -19,14 +19,14 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I am an Information Engineering graduate from Universitas Gadjah Mada,
-        one of most prestigious univesities in Indonesia with GPA 3.51 out of
-        4.00. Throughout my academic journey, I have developed a solid
-        foundation in various aspects of information technology, including
-        software development, database management, computer network, and system
-        analysis. My coursework has equipped me with the technical proficiency
-        to tackle complex IT challenges while fostering critical thinking and
-        problem-solving abilities essential in the fast-paced IT industry.
+        I am an Information Engineering graduate from Universitas Gadjah Mada
+        with GPA 3.51 out of 4.00. Throughout my academic journey, I have
+        developed a solid foundation in various aspects of information
+        technology, including software development, database management,
+        computer network, and system analysis. My coursework has equipped me
+        with the technical proficiency to tackle complex IT challenges while
+        fostering critical thinking and problem-solving abilities essential in
+        the fast-paced IT industry.
       </p>
 
       <p>
