@@ -7,7 +7,7 @@ export default function Footer() {
             &copy; 2024 Bagas Yudhistira Fauzi. All rights reserved.
         </small>
         <p className='text-xs'>
-            <span className='font-semibold'>About this website:</span> built with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email, and Resend, hosted on Vercel.
+            <span className='font-semibold'>About this website:</span> built with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email, and Resend, hosted on Vercel and domain registered on Biznet Gio Cloud.
         </p>
     </footer>
   )
