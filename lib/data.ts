@@ -67,7 +67,7 @@ export const experiencesData = [
       "Worked as a backend developer for 2 years at an IT consulting firm serving multiple government and private sector clients. Developed and maintained server-side logic, database management, and API integrations to ensure seamless functionality and performance across various enterprise applications.",
     icon: React.createElement(CgWorkAlt),
     date: "2025 - now",
-  },
+  }
 ] as const;
 
 export const projectsData = [
@@ -91,7 +91,7 @@ export const projectsData = [
       "Created a website for a village to showcase its information and potential attractions to the public.",
     tags: ["Wordpress", "HTML", "CSS"],
     imageUrl: desasitoluhutaImg,
-  },
+  }
 
   // {
   //   title: "rmtDev",
