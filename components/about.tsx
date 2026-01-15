@@ -19,20 +19,21 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I am an Information Engineering graduate from Universitas Gadjah Mada
-        with GPA 3.51 out of 4.00. Throughout my academic journey, I have
-        developed a solid foundation in various aspects of information
-        technology, including software development, database management,
-        computer network, and system analysis. My coursework has equipped me
-        with the technical proficiency to tackle complex IT challenges while
-        fostering critical thinking and problem-solving abilities essential in
-        the fast-paced IT industry.
+        I am a passionate Backend Developer with a degree in Information
+        Engineering from Universitas Gadjah Mada. I possess a solid foundation
+        in web development, database management, and system architecture. My
+        current focus is on creating robust and scalable backend systems, while
+        I also have a keen interest in DevOps practices. I strive to optimize
+        infrastructure and implement best practices in deployment and monitoring
+        to ensure seamless operations and high performance.
       </p>
 
       <p>
-        When I am not coding, I enjoy playing video games, watching movies, and
-        hangout with my friends. I am currently learning about investment
-        instruments such as stocks and cryptocurrency.
+        Outside of coding, I am an avid gamer and a movie enthusiast. I cherish
+        quality time with friends and family. Currently, I am expanding my
+        knowledge in investment instruments, focusing on stocks, bonds, and
+        mutual funds, to better understand financial markets and make informed
+        decisions.
       </p>
     </motion.section>
   );
