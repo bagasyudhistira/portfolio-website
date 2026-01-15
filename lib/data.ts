@@ -37,45 +37,37 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Public Relations Staff KMTETI UGM",
-    location: "Universitas Gadjah Mada, Indonesia",
+    title: "Public Relations Staff KMTETI Universitas Gadjah Mada",
+    location: "Yogyakarta, Indonesia",
     description:
-      "I worked as a public relations staff for 2 years. I learned about working in a team, project management, and responsibility.",
+      "Managed public communications and organized major events for 2 years. Built strong teamwork, project management, and leadership skills through coordinating organizational initiatives and strategic communications.",
     icon: React.createElement(FaHandshake),
-    date: "2020-2022",
+    date: "2020 - 2022",
   },
   {
     title: "IT Intern",
-    location: "BPN Kabupaten Bekasi, Indonesia",
+    location: "Bekasi, Indonesia",
     description:
-      "I worked as an IT intern for 2 months. I analyzed the current web design and made a new web design for the office. I also learned about the area mapping and how to work in a government office.",
+      "Completed 2-month IT internship analyzing existing web design and developing an improved design for the office. Gained hands-on experience in area mapping and government office operations.",
     icon: React.createElement(LuMap),
     date: "2022",
   },
   {
-    title: "Bachelor of Engineering in Information Engineering",
-    location: "Universitas Gadjah Mada, Indonesia",
+    title: "Bachelor of Engineering at Universitas Gadjah Mada",
+    location: "Yogyakarta, Indonesia",
     description:
-      "I graduated after 4.5 years of studying with GPA 3.51 out of 4.00.",
+      "Graduated with GPA 3.51/4.00 after 4.5 years of rigorous study in information engineering and computer science.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019-2024",
+    date: "2019 - 2024",
   },
-  // {
-  //   title: "Front-End Developer",
-  //   location: "Orlando, FL",
-  //   description:
-  //     "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-  //   icon: React.createElement(CgWorkAlt),
-  //   date: "2019 - 2021",
-  // },
-  // {
-  //   title: "Full-Stack Developer",
-  //   location: "Houston, TX",
-  //   description:
-  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-  //   icon: React.createElement(FaReact),
-  //   date: "2021 - present",
-  // },
+  {
+    title: "Backend Developer at Ogya Tekno Nusantara",
+    location: "Jakarta, Indonesia",
+    description:
+      "Worked as a backend developer for 2 years at an IT consulting firm serving multiple government and private sector clients. Developed and maintained server-side logic, database management, and API integrations to ensure seamless functionality and performance across various enterprise applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - now",
+  }
 ] as const;
 
 export const projectsData = [
@@ -87,14 +79,14 @@ export const projectsData = [
   //   imageUrl: corpcommentImg,
   // },
   {
-    title: "ATEGO",
+    title: "Attendance on the Go (ATEGO) Mobile App",
     description:
       "I was a mobile app developer to create a mobile app for completing my thesis. The app is an automated presence system using GPS",
     tags: ["Flutter", "Dart", "Firebase"],
     imageUrl: ategoImg,
   },
   {
-    title: "Sitoluhuta Village's Website",
+    title: "Sitoluhuta Village Website",
     description:
       "I worked as a web developer to create website for a small village in 50 days. The website is used to give information of the village and its potentials.",
     tags: ["Wordpress", "HTML", "CSS"],
