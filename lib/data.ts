@@ -67,7 +67,7 @@ export const experiencesData = [
       "Worked as a backend developer for 2 years at an IT consulting firm serving multiple government and private sector clients. Developed and maintained server-side logic, database management, and API integrations to ensure seamless functionality and performance across various enterprise applications.",
     icon: React.createElement(CgWorkAlt),
     date: "2025 - now",
-  }
+  },
 ] as const;
 
 export const projectsData = [
@@ -81,14 +81,14 @@ export const projectsData = [
   {
     title: "Attendance on the Go (ATEGO) Mobile App",
     description:
-      "I was a mobile app developer to create a mobile app for completing my thesis. The app is an automated presence system using GPS",
+      "Built a mobile app for my thesis project that automates attendance tracking using GPS location technology.",
     tags: ["Flutter", "Dart", "Firebase"],
     imageUrl: ategoImg,
   },
   {
     title: "Sitoluhuta Village Website",
     description:
-      "I worked as a web developer to create website for a small village in 50 days. The website is used to give information of the village and its potentials.",
+      "Created a website for a village to showcase its information and potential attractions to the public.",
     tags: ["Wordpress", "HTML", "CSS"],
     imageUrl: desasitoluhutaImg,
   },
