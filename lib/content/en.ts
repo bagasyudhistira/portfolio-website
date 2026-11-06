@@ -61,7 +61,7 @@ export const en: SiteContent = {
       slug: "hospital-referral",
       title: "Integrated Hospital Referral System",
       org: "Capstone project, Universitas Gadjah Mada",
-      period: "2023 – 2024",
+      period: "2022 – 2023",
       summary:
         "Web-based administration system for hospital referral flows between healthcare facilities. Built as the final capstone project of my degree; source is not public.",
       bullets: [

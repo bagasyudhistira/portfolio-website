@@ -61,7 +61,7 @@ export const id: SiteContent = {
       slug: "hospital-referral",
       title: "Sistem Administrasi Rujukan Rumah Sakit",
       org: "Proyek capstone, Universitas Gadjah Mada",
-      period: "2023 – 2024",
+      period: "2022 – 2023",
       summary:
         "Sistem administrasi berbasis web untuk alur rujukan antar fasilitas kesehatan. Dibangun sebagai proyek capstone akhir masa studi; kode tidak dipublikasikan.",
       bullets: [
