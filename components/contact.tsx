@@ -4,39 +4,34 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { sendEmail } from "@/actions/sendEmail";
+import { CONTACT_EMAIL } from "@/lib/data";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.75);
+  const t = useTranslations("contact");
 
   return (
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-      }}
+      className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
     >
-      <SectionHeading>Contact Me</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/75">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:bagasyudhistirafauzi@gmail.com">
-          bagasyudhistirafauzi@gmail.com
+        {t("lead")}{" "}
+        <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>
+          {CONTACT_EMAIL}
         </a>{" "}
-        or through this form.
+        {t("or")}
       </p>
 
       <form
@@ -44,11 +39,10 @@ export default function Contact() {
         action={async (formData) => {
           const { error } = await sendEmail(formData);
           if (error) {
-            toast.error(error);
+            toast.error(t("error"));
             return;
-          } else {
-            toast.success("Your message has been sent");
           }
+          toast.success(t("success"));
         }}
       >
         <input
@@ -57,7 +51,8 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder={t("emailPlaceholder")}
+          aria-label={t("emailPlaceholder")}
         />
 
         <textarea
@@ -65,7 +60,8 @@ export default function Contact() {
           name="message"
           required
           maxLength={5000}
-          placeholder="Your message"
+          placeholder={t("messagePlaceholder")}
+          aria-label={t("messagePlaceholder")}
         />
 
         <SubmitBtn />

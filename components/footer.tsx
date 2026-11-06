@@ -1,17 +1,16 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const year = new Date().getFullYear();
+
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
       <small className="mb-2 block text-xs">
-        &copy; 2024 Bagas Yudhistira Fauzi. All rights reserved.
+        {t("copyright", { year })}
       </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS,
-        Framer Motion, React Email, and Resend, web hosted on Vercel and domain
-        registered on Namecheap.
-      </p>
+      <p className="text-xs">{t("builtWith")}</p>
     </footer>
   );
 }
