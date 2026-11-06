@@ -32,14 +32,9 @@ export default function Profile() {
         {t("headlineEnd")}
       </motion.h2>
 
-      <motion.p
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-        className="text-muted mt-4 max-w-[60ch] text-[0.97rem] leading-relaxed"
-      >
+      <p className="text-muted mt-4 max-w-[60ch] text-[0.97rem] leading-relaxed">
         {ta("p1")}
-      </motion.p>
+      </p>
 
       <dl className="mt-8 flex flex-wrap gap-2.5">
         {hero.metrics.map((metric, index) => (

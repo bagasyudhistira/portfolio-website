@@ -38,7 +38,7 @@ export default function LanguageSwitcher() {
           className={clsx(
             "rounded-md px-2 py-1 font-mono text-[0.68rem] uppercase tracking-[0.06em] transition",
             option === locale
-              ? "bg-accent text-white"
+              ? "bg-accent text-[#06101f] font-semibold"
               : "text-dim hover:text-fg"
           )}
         >
