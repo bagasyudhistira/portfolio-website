@@ -15,15 +15,15 @@
 }
 
 .dark {
-  --bg: #0b0c0e;
-  --panel: #111316;
-  --panel-2: #16191d;
-  --line: rgba(255, 255, 255, 0.09);
-  --fg: #eef1f5;
-  --muted: #98a1ad;
-  --dim: #69707b;
+  --bg: #07080a;
+  --panel: #0e1013;
+  --panel-2: #131619;
+  --line: rgba(255, 255, 255, 0.08);
+  --fg: #e8ebf0;
+  --muted: #939ca9;
+  --dim: #61686f;
   --accent: #5b8cff;
-  --line-color: rgba(255, 255, 255, 0.2);
+  --line-color: rgba(255, 255, 255, 0.18);
 }
 
 html {
