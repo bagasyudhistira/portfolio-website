@@ -25,9 +25,7 @@ const readInitialTheme = (): Theme => {
     return stored;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return "dark";
 };
 
 export default function ThemeContextProvider({

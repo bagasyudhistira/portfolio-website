@@ -1,21 +1,31 @@
-import About from "@/components/about";
+import { setRequestLocale } from "next-intl/server";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
-import Intro from "@/components/intro";
+import Footer from "@/components/footer";
+import Profile from "@/components/profile";
 import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
+  // Keeps the route statically prerendered: the server-rendered Footer reads
+  // translations, which would otherwise switch the page to request-time
+  // rendering.
+  setRequestLocale(locale);
+
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
+    <div className="flex flex-col gap-12">
+      <Profile />
       <Projects />
       <Skills />
       <Experience />
       <Contact />
-    </main>
+      <Footer />
+    </div>
   );
 }

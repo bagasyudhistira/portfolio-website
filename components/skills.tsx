@@ -1,71 +1,58 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { useLocale, useTranslations } from "next-intl";
-import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { getContent } from "@/lib/content";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
-
 export default function Skills() {
-  const { ref } = useSectionInView("Skills", 1);
   const t = useTranslations("skills");
   const locale = useLocale();
   const { skills } = getContent(locale);
 
   const groups = [
-    { label: t("coreLabel"), items: skills.core, emphasis: true },
-    { label: t("familiarLabel"), items: skills.familiar, emphasis: false },
+    { label: t("coreLabel"), items: skills.core, primary: true },
+    { label: t("familiarLabel"), items: skills.familiar, primary: false },
   ];
 
   return (
-    <section
-      ref={ref}
-      id="skills"
-      className="mb-28 max-w-[53rem] scroll-mt-28 sm:mb-40"
-    >
-      <SectionHeading>{t("title")}</SectionHeading>
+    <section id="skills" className="scroll-mt-24">
+      <div className="mb-3 flex items-end justify-between gap-3">
+        <h3 className="text-[0.95rem] font-semibold tracking-tight">
+          {t("title")}
+        </h3>
+        <span className="text-dim font-mono text-[0.68rem] uppercase tracking-[0.1em]">
+          {t("hint")}
+        </span>
+      </div>
 
-      <div className="space-y-8">
+      <div className="grid gap-3 sm:grid-cols-2">
         {groups.map((group) => (
-          <div key={group.label}>
-            <p className="mb-3 text-sm uppercase tracking-wider text-gray-500 dark:text-white/50">
+          <motion.div
+            key={group.label}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="border-line bg-panel rounded-2xl border p-4"
+          >
+            <h4 className="text-dim mb-2.5 font-mono text-[0.66rem] uppercase tracking-[0.12em]">
               {group.label}
-            </p>
-            <ul className="flex flex-wrap gap-2 text-lg text-gray-800">
-              {group.items.map((skill, index) => (
-                <motion.li
-                  className={
-                    group.emphasis
-                      ? "rounded-xl border border-black/[0.1] bg-white px-5 py-3 font-medium dark:bg-white/10 dark:text-white/80"
-                      : "rounded-xl border border-black/[0.06] bg-white/60 px-4 py-2 text-base text-gray-600 dark:bg-white/[0.04] dark:text-white/60"
-                  }
+            </h4>
+            <ul className="flex flex-wrap gap-1.5">
+              {group.items.map((skill) => (
+                <li
                   key={skill}
-                  variants={fadeInAnimationVariants}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  custom={index}
+                  className={
+                    group.primary
+                      ? "border-line bg-panel2 text-fg rounded-md border px-2.5 py-1 text-[0.82rem]"
+                      : "border-line bg-panel2 text-muted rounded-md border px-2 py-0.5 text-[0.78rem]"
+                  }
                 >
                   {skill}
-                </motion.li>
+                </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

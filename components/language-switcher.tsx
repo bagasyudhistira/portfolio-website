@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div
-      className="flex items-center gap-1 rounded-full border border-black/10 bg-white/70 p-1 text-[0.75rem] font-medium dark:border-white/15 dark:bg-white/10"
+      className="border-line flex items-center gap-0.5 rounded-lg border p-0.5"
       aria-label={t("label")}
     >
       {routing.locales.map((option) => (
@@ -36,10 +36,10 @@ export default function LanguageSwitcher() {
           disabled={isPending}
           aria-current={option === locale ? "true" : undefined}
           className={clsx(
-            "rounded-full px-2 py-1 uppercase transition",
+            "rounded-md px-2 py-1 font-mono text-[0.68rem] uppercase tracking-[0.06em] transition",
             option === locale
-              ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-              : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              ? "bg-accent text-white"
+              : "text-dim hover:text-fg"
           )}
         >
           {option}

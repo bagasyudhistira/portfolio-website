@@ -1,19 +1,25 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "Profile",
     "projects": "Projects",
-    "skills": "Skills",
+    "skills": "Stack",
     "experience": "Experience",
     "contact": "Contact"
   },
-  "intro": {
-    "hello": "Hello, I'm Bagas.",
-    "role": "Back-end Developer",
-    "body": "I build enterprise back-end systems with Java and Spring, most recently for digital banking and government platforms. I care about data integrity, query performance, and systems that stay predictable under load.",
-    "contactCta": "Contact me here",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+  "rail": {
+    "role": "Back-end developer · Jakarta",
+    "status": "open to opportunities",
+    "theme": "Toggle theme",
+    "blurb": "Java and Spring back-ends for digital banking and government systems. Open to back-end roles in Jakarta or remote."
+  },
+  "profile": {
+    "eyebrow": "Enterprise back-end · finance & government",
+    "headlineStart": "Back-ends that stay",
+    "headlineAccent": "correct",
+    "headlineEnd": "long after the demo.",
+    "englishValue": "TOEFL 547",
+    "englishLabel": "English"
   },
   "about": {
     "title": "About me",
@@ -22,19 +28,23 @@
   },
   "projects": {
     "title": "Projects",
+    "count": "{count} selected",
     "confidential": "Client work under NDA — no screenshots published.",
     "nda": "NDA"
   },
   "skills": {
-    "title": "Skills",
+    "title": "Stack",
+    "hint": "two tiers",
     "coreLabel": "Day to day",
     "familiarLabel": "Also familiar with"
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "hint": "newest first"
   },
   "contact": {
-    "title": "Contact me",
+    "title": "Contact",
+    "hint": "replies same day",
     "lead": "Reach me directly at",
     "or": "or through this form.",
     "emailPlaceholder": "Your email",
@@ -44,8 +54,8 @@
     "error": "Something went wrong. Please try again or email me directly."
   },
   "footer": {
-    "copyright": "© {year} Bagas Yudhistira Fauzi. All rights reserved.",
-    "builtWith": "Built with Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion and Resend. Deployed on Vercel."
+    "copyright": "© {year} Bagas Yudhistira Fauzi",
+    "builtWith": "Next.js · TypeScript · Tailwind · Vercel"
   },
   "language": {
     "label": "Language",
