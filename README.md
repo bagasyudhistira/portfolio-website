@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+Personal portfolio of Bagas Yudhistira Fauzi — back-end developer (Java/Spring, PostgreSQL, enterprise systems).
 
-First, run the development server:
+Built with Next.js (App Router), TypeScript, Tailwind CSS and Framer Motion. Auto-deployed to Vercel on every push to `main`.
+
+## Requirements
+
+- Node.js >= 20.9
+- npm >= 10
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Checks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint     # ESLint (flat config)
+npm run build    # production build + type check
+npm start        # serve the production build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Environment
 
-## Learn More
+The contact form sends mail through Resend. Set this in `.env.local` (and in the Vercel project settings for production):
 
-To learn more about Next.js, take a look at the following resources:
+```
+RESEND_API_KEY=re_...
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Without the key the page still renders; submitting the form returns an error toast.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Structure
 
-## Deploy on Vercel
+- `app/` — App Router entry (`layout.tsx`, `page.tsx`, `globals.css`)
+- `components/` — presentational sections (intro, about, projects, skills, experience, contact)
+- `context/` — theme and active-section providers
+- `lib/` — content data (`data.ts`), hooks, utilities, email template
+- `actions/` — server actions (`sendEmail`)
+- `public/` — images used by the page (WebP)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Content lives in `lib/data.ts`; edit there rather than in the components.
+- `next lint` no longer exists in Next.js 16 — linting runs through `eslint` directly with `eslint.config.mjs`.
