@@ -22,7 +22,7 @@ export default function Rail() {
   return (
     <aside
       id="home"
-      className="border-line bg-panel/60 flex flex-col gap-5 border-b px-6 py-5 lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r lg:px-7 lg:py-8"
+      className="border-line bg-panel/60 flex flex-col gap-5 border-b px-6 pb-5 pt-20 lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r lg:px-7 lg:py-8"
     >
       <div className="flex items-center gap-4 lg:block">
         <div className="border-line from-panel2 to-panel text-accent grid h-16 w-16 shrink-0 place-items-center rounded-2xl border bg-gradient-to-br font-mono text-lg">

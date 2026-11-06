@@ -18,7 +18,7 @@ export default function FloatingNav() {
     useActiveSectionContext();
 
   return (
-    <div className="no-scrollbar px-3 pt-3 sm:pt-4 pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center">
+    <div className="no-scrollbar px-3 pt-3 sm:pt-4 lg:pl-[320px] pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center">
       <nav
         aria-label={t("home")}
         className="no-scrollbar border-line bg-panel/85 pointer-events-auto flex max-w-full items-center gap-0.5 overflow-x-auto rounded-full border px-1.5 py-1.5 shadow-lg shadow-black/5 backdrop-blur-md"
