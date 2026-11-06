@@ -63,12 +63,12 @@ export const id: SiteContent = {
       org: "Proyek capstone, Universitas Gadjah Mada",
       period: "2022 – 2023",
       summary:
-        "Sistem administrasi berbasis web untuk alur rujukan antar fasilitas kesehatan. Proyek capstone masa studi; kode tidak dipublikasikan.",
+        "Back-end developer pada sistem berbasis web yang menangani alur rujukan rumah sakit antar fasilitas kesehatan. Proyek capstone masa studi; kode tidak dipublikasikan.",
       bullets: [
-        "Memodelkan alur rujukan dari rekam pasien hingga fasilitas penerima",
-        "Membangun sisi administrasi sebagai aplikasi web full-stack",
+        "Membangun back-end: alur rujukan dari rekam pasien hingga fasilitas penerima",
+        "Menerapkan model data administrasi beserta logika sisi server di belakangnya",
       ],
-      stack: ["Web", "Basis data", "Full-stack"],
+      stack: ["Back-end", "Web", "Basis data"],
     },
     {
       slug: "atego",
@@ -133,7 +133,7 @@ export const id: SiteContent = {
       location: "Yogyakarta, Indonesia",
       period: "2019 – 2024",
       description:
-        "Lulus cum laude dengan IPK 3,51/4,00. Skripsi tentang aplikasi presensi berbasis GPS; capstone tentang sistem rujukan rumah sakit.",
+        "Lulus cum laude dengan IPK 3,51/4,00. Capstone tentang sistem rujukan rumah sakit; skripsi tentang aplikasi presensi berbasis GPS.",
       icon: "graduation",
     },
     {
