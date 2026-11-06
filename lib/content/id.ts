@@ -58,19 +58,6 @@ export const id: SiteContent = {
       confidential: true,
     },
     {
-      slug: "hospital-referral",
-      title: "Sistem Administrasi Rujukan Rumah Sakit",
-      org: "Proyek capstone, Universitas Gadjah Mada",
-      period: "2022 – 2023",
-      summary:
-        "Back-end developer pada sistem berbasis web yang menangani alur rujukan rumah sakit antar fasilitas kesehatan. Proyek capstone masa studi; kode tidak dipublikasikan.",
-      bullets: [
-        "Membangun back-end: alur rujukan dari rekam pasien hingga fasilitas penerima",
-        "Menerapkan model data administrasi beserta logika sisi server di belakangnya",
-      ],
-      stack: ["Back-end", "Web", "Basis data"],
-    },
-    {
       slug: "atego",
       title: "ATEGO — Aplikasi Presensi GPS",
       org: "Proyek skripsi, Universitas Gadjah Mada",
@@ -83,6 +70,19 @@ export const id: SiteContent = {
       ],
       stack: ["Flutter", "Dart", "Firebase"],
       image: ategoImg,
+    },
+    {
+      slug: "hospital-referral",
+      title: "Sistem Administrasi Rujukan Rumah Sakit",
+      org: "Proyek capstone, Universitas Gadjah Mada",
+      period: "2022 – 2023",
+      summary:
+        "Back-end developer pada sistem berbasis web yang menangani alur rujukan rumah sakit antar fasilitas kesehatan. Proyek capstone masa studi; kode tidak dipublikasikan.",
+      bullets: [
+        "Membangun back-end dengan Spring Boot: alur rujukan dari rekam pasien hingga fasilitas penerima",
+        "Menerapkan model data administrasi beserta logika sisi server di belakangnya",
+      ],
+      stack: ["Spring Boot", "Back-end", "Basis data"],
     },
     {
       slug: "sitoluhuta",
@@ -133,7 +133,7 @@ export const id: SiteContent = {
       location: "Yogyakarta, Indonesia",
       period: "2019 – 2024",
       description:
-        "Lulus cum laude dengan IPK 3,51/4,00. Capstone tentang sistem rujukan rumah sakit; skripsi tentang aplikasi presensi berbasis GPS.",
+        "Lulus cum laude dengan IPK 3,51/4,00. Skripsi tentang aplikasi presensi berbasis GPS; capstone tentang sistem rujukan rumah sakit.",
       icon: "graduation",
     },
     {

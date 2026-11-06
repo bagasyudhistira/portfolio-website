@@ -58,19 +58,6 @@ export const en: SiteContent = {
       confidential: true,
     },
     {
-      slug: "hospital-referral",
-      title: "Integrated Hospital Referral System",
-      org: "Capstone project, Universitas Gadjah Mada",
-      period: "2022 – 2023",
-      summary:
-        "Back-end developer on a web-based system that handles hospital referral flows between healthcare facilities. Capstone project of my degree; the source is not public.",
-      bullets: [
-        "Built the back-end: the referral workflow from patient record to receiving facility",
-        "Implemented the administration data model and the server-side logic behind it",
-      ],
-      stack: ["Back-end", "Web", "Database"],
-    },
-    {
       slug: "atego",
       title: "ATEGO — GPS Attendance App",
       org: "Thesis project, Universitas Gadjah Mada",
@@ -83,6 +70,19 @@ export const en: SiteContent = {
       ],
       stack: ["Flutter", "Dart", "Firebase"],
       image: ategoImg,
+    },
+    {
+      slug: "hospital-referral",
+      title: "Integrated Hospital Referral System",
+      org: "Capstone project, Universitas Gadjah Mada",
+      period: "2022 – 2023",
+      summary:
+        "Back-end developer on a web-based system that handles hospital referral flows between healthcare facilities. Capstone project of my degree; the source is not public.",
+      bullets: [
+        "Built the back-end with Spring Boot: the referral workflow from patient record to receiving facility",
+        "Implemented the administration data model and the server-side logic behind it",
+      ],
+      stack: ["Spring Boot", "Back-end", "Database"],
     },
     {
       slug: "sitoluhuta",
@@ -133,7 +133,7 @@ export const en: SiteContent = {
       location: "Yogyakarta, Indonesia",
       period: "2019 – 2024",
       description:
-        "Graduated cum laude with a GPA of 3.51/4.00. Capstone on a hospital referral system; thesis on a GPS-based attendance application.",
+        "Graduated cum laude with a GPA of 3.51/4.00. Thesis on a GPS-based attendance application; capstone on a hospital referral system.",
       icon: "graduation",
     },
     {
