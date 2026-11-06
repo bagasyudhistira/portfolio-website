@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "@/context/theme-context";
 import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL } from "@/lib/data";
 import { getContent } from "@/lib/content";
+import personPicture from "@/public/person.webp";
 import LanguageSwitcher from "./language-switcher";
 
 export default function Rail() {
@@ -13,20 +15,21 @@ export default function Rail() {
   const { theme, toggleTheme } = useTheme();
   const { hero } = getContent(locale);
 
-  const initials = hero.name
-    .split(" ")
-    .slice(0, 2)
-    .map((part) => part[0])
-    .join("");
-
   return (
     <aside
       id="home"
       className="border-line bg-panel/60 flex flex-col gap-5 border-b px-6 pb-5 pt-20 lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r lg:px-7 lg:py-8"
     >
       <div className="flex items-center gap-4 lg:block">
-        <div className="border-line from-panel2 to-panel text-accent grid h-16 w-16 shrink-0 place-items-center rounded-2xl border bg-gradient-to-br font-mono text-lg">
-          {initials}
+        <div className="border-line relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border">
+          <Image
+            src={personPicture}
+            alt={hero.name}
+            width={64}
+            height={64}
+            priority
+            className="h-full w-full object-cover"
+          />
         </div>
         <div className="lg:mt-4">
           <h1 className="text-[1.12rem] font-semibold tracking-tight">
