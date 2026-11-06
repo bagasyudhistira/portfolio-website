@@ -5,8 +5,7 @@ import Image from "next/image";
 import personPicture from "@/public/person.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -87,15 +86,6 @@ export default function Intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-75 group-hover: translate-x-1 transition" />
         </Link>
-
-        {/* <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/BagasYudhistiraFauzi_CV.pdf"
-          download={true}
-        >
-          Download CV (ATS-friendly){" "}
-          <HiDownload className=" opacity-75 group-hover:translate-y-1 transition" />
-        </a> */}
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
