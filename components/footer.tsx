@@ -6,11 +6,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        {t("copyright", { year })}
-      </small>
-      <p className="text-xs">{t("builtWith")}</p>
+    <footer className="border-line text-dim mt-10 flex flex-wrap items-center justify-between gap-3 border-t pt-5 font-mono text-[0.7rem]">
+      <span>{t("copyright", { year })}</span>
+      <span>{t("builtWith")}</span>
     </footer>
   );
 }

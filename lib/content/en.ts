@@ -21,10 +21,10 @@ export const en: SiteContent = {
         "Back-end and full-stack work on the core operational modules of a corporate CRM used by a leading Indonesian digital bank.",
       bullets: [
         "Developed task-management and parameter CRUD flows in Java Spring, backed by PostgreSQL",
-        "Architected server-rendered interfaces with Thymeleaf and Spring MVC, cutting client-side state overhead",
+        "Architected server-rendered interfaces with Spring and Thymeleaf, cutting client-side state overhead",
         "Hardened input validation and error handling across parameter workflows to protect data integrity",
       ],
-      stack: ["Java", "Spring", "Spring MVC", "Thymeleaf", "PostgreSQL"],
+      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
       confidential: true,
     },
     {
@@ -39,7 +39,7 @@ export const en: SiteContent = {
         "Built document lifecycle modules with access control, automated categorisation and secure content handling",
         "Kept the service light on resources by rendering on the server instead of shipping API round-trips",
       ],
-      stack: ["Java", "Spring", "PostgreSQL", "Thymeleaf"],
+      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
       confidential: true,
     },
     {

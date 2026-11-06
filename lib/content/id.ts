@@ -21,10 +21,10 @@ export const id: SiteContent = {
         "Pekerjaan back-end dan full-stack pada modul operasional inti CRM korporat yang dipakai salah satu bank digital terkemuka di Indonesia.",
       bullets: [
         "Membangun modul manajemen tugas dan alur CRUD parameter dengan Java Spring dan PostgreSQL",
-        "Merancang antarmuka server-side rendering memakai Thymeleaf dan Spring MVC untuk menekan beban state di klien",
+        "Merancang antarmuka server-side rendering memakai Spring dan Thymeleaf untuk menekan beban state di klien",
         "Memperkuat validasi input dan penanganan galat pada alur parameter agar integritas data terjaga",
       ],
-      stack: ["Java", "Spring", "Spring MVC", "Thymeleaf", "PostgreSQL"],
+      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
       confidential: true,
     },
     {
@@ -39,7 +39,7 @@ export const id: SiteContent = {
         "Membangun modul siklus hidup dokumen dengan kontrol akses, kategorisasi otomatis, dan penanganan konten yang aman",
         "Menjaga konsumsi sumber daya tetap ringan dengan rendering di sisi server alih-alih lalu lintas API berulang",
       ],
-      stack: ["Java", "Spring", "PostgreSQL", "Thymeleaf"],
+      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
       confidential: true,
     },
     {

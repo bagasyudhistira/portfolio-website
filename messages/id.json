@@ -1,19 +1,24 @@
 {
   "nav": {
     "home": "Beranda",
-    "about": "Tentang",
+    "about": "Profil",
     "projects": "Proyek",
     "skills": "Keahlian",
     "experience": "Pengalaman",
     "contact": "Kontak"
   },
-  "intro": {
-    "hello": "Halo, saya Bagas.",
-    "role": "Back-end Developer",
-    "body": "Saya membangun sistem back-end enterprise dengan Java dan Spring, terbaru untuk platform perbankan digital dan pemerintahan. Saya memperhatikan integritas data, performa query, dan sistem yang tetap dapat diprediksi saat beban meningkat.",
-    "contactCta": "Hubungi saya",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+  "rail": {
+    "role": "Back-end developer · Jakarta",
+    "status": "terbuka untuk peluang",
+    "theme": "Ganti tema"
+  },
+  "profile": {
+    "eyebrow": "Back-end enterprise · keuangan & pemerintahan",
+    "headlineStart": "Back-end yang tetap",
+    "headlineAccent": "benar",
+    "headlineEnd": "jauh setelah demo selesai.",
+    "englishValue": "TOEFL 547",
+    "englishLabel": "Bahasa Inggris"
   },
   "about": {
     "title": "Tentang saya",
@@ -22,19 +27,23 @@
   },
   "projects": {
     "title": "Proyek",
+    "count": "{count} proyek",
     "confidential": "Pekerjaan klien dengan NDA — tanpa tangkapan layar.",
     "nda": "NDA"
   },
   "skills": {
     "title": "Keahlian",
+    "hint": "dua tingkat",
     "coreLabel": "Sehari-hari",
     "familiarLabel": "Juga familiar dengan"
   },
   "experience": {
-    "title": "Pengalaman"
+    "title": "Pengalaman",
+    "hint": "terbaru di atas"
   },
   "contact": {
-    "title": "Hubungi saya",
+    "title": "Kontak",
+    "hint": "dibalas hari yang sama",
     "lead": "Hubungi saya langsung di",
     "or": "atau melalui formulir ini.",
     "emailPlaceholder": "Email Anda",
@@ -44,8 +53,8 @@
     "error": "Terjadi kesalahan. Silakan coba lagi atau kirim email langsung."
   },
   "footer": {
-    "copyright": "© {year} Bagas Yudhistira Fauzi. Seluruh hak cipta dilindungi.",
-    "builtWith": "Dibangun dengan Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, dan Resend. Dihosting di Vercel."
+    "copyright": "© {year} Bagas Yudhistira Fauzi",
+    "builtWith": "Next.js · TypeScript · Tailwind · Vercel"
   },
   "language": {
     "label": "Bahasa",
