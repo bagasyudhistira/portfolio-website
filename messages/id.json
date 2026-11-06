@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "skills": "Keahlian",
+    "experience": "Pengalaman",
+    "contact": "Kontak"
+  },
+  "intro": {
+    "hello": "Halo, saya Bagas.",
+    "role": "Back-end Developer",
+    "body": "Saya membangun sistem back-end enterprise dengan Java dan Spring, terbaru untuk platform perbankan digital dan pemerintahan. Saya memperhatikan integritas data, performa query, dan sistem yang tetap dapat diprediksi saat beban meningkat.",
+    "contactCta": "Hubungi saya",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "about": {
+    "title": "Tentang saya",
+    "p1": "Saya back-end developer dengan latar pendidikan Teknik Informasi dari Universitas Gadjah Mada. Sebagian besar pekerjaan saya berada di Java dan Spring dengan PostgreSQL — membangun bagian aplikasi yang harus tetap benar meski tidak ada yang mengawasi.",
+    "p2": "Di luar pekerjaan saya gemar bermain gim dan menonton film, serta menghargai waktu bersama teman dan keluarga. Saya juga sedang mempelajari instrumen investasi — saham, obligasi, dan reksa dana — untuk lebih memahami pasar keuangan."
+  },
+  "projects": {
+    "title": "Proyek",
+    "confidential": "Pekerjaan klien dengan NDA — tanpa tangkapan layar.",
+    "nda": "NDA"
+  },
+  "skills": {
+    "title": "Keahlian",
+    "coreLabel": "Sehari-hari",
+    "familiarLabel": "Juga familiar dengan"
+  },
+  "experience": {
+    "title": "Pengalaman"
+  },
+  "contact": {
+    "title": "Hubungi saya",
+    "lead": "Hubungi saya langsung di",
+    "or": "atau melalui formulir ini.",
+    "emailPlaceholder": "Email Anda",
+    "messagePlaceholder": "Pesan Anda",
+    "submit": "Kirim pesan",
+    "success": "Pesan Anda sudah terkirim",
+    "error": "Terjadi kesalahan. Silakan coba lagi atau kirim email langsung."
+  },
+  "footer": {
+    "copyright": "© {year} Bagas Yudhistira Fauzi. Seluruh hak cipta dilindungi.",
+    "builtWith": "Dibangun dengan Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, dan Resend. Dihosting di Vercel."
+  },
+  "language": {
+    "label": "Bahasa",
+    "en": "English",
+    "id": "Indonesia",
+    "switchTo": "Read in English"
+  },
+  "metadata": {
+    "title": "Bagas Yudhistira Fauzi — Back-end Developer",
+    "description": "Back-end developer yang membangun sistem enterprise dengan Java, Spring, dan PostgreSQL untuk klien perbankan digital dan pemerintahan."
+  }
+}

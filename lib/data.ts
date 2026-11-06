@@ -1,108 +1,12 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaHandshake } from "react-icons/fa";
-import { LuGraduationCap, LuMap } from "react-icons/lu";
-import desasitoluhutaImg from "@/public/desasitoluhuta.webp";
-import ategoImg from "@/public/atego.webp";
-
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { key: "home", section: "Home", hash: "#home" },
+  { key: "about", section: "About", hash: "#about" },
+  { key: "projects", section: "Projects", hash: "#projects" },
+  { key: "skills", section: "Skills", hash: "#skills" },
+  { key: "experience", section: "Experience", hash: "#experience" },
+  { key: "contact", section: "Contact", hash: "#contact" },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Public Relations Staff KMTETI Universitas Gadjah Mada",
-    location: "Yogyakarta, Indonesia",
-    description:
-      "Managed public communications and organized major events for 2 years. Built strong teamwork, project management, and leadership skills through coordinating organizational initiatives and strategic communications.",
-    icon: React.createElement(FaHandshake),
-    date: "2020 - 2022",
-  },
-  {
-    title: "IT Intern",
-    location: "Bekasi, Indonesia",
-    description:
-      "Completed 2-month IT internship analyzing existing web design and developing an improved design for the office. Gained hands-on experience in area mapping and government office operations.",
-    icon: React.createElement(LuMap),
-    date: "2022",
-  },
-  {
-    title: "Bachelor of Engineering at Universitas Gadjah Mada",
-    location: "Yogyakarta, Indonesia",
-    description:
-      "Graduated with GPA 3.51/4.00 after 4.5 years of rigorous study in information engineering and computer science.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2024",
-  },
-  {
-    title: "Backend Developer at Ogya Tekno Nusantara",
-    location: "Jakarta, Indonesia",
-    description:
-      "Worked as a backend developer for 2 years at an IT consulting firm serving multiple government and private sector clients. Developed and maintained server-side logic, database management, and API integrations to ensure seamless functionality and performance across various enterprise applications.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2025 - now",
-  },
-] as const;
-
-export const projectsData = [
-  {
-    title: "Attendance on the Go (ATEGO) Mobile App",
-    description:
-      "Built a mobile app for my thesis project that automates attendance tracking using GPS location technology.",
-    tags: ["Flutter", "Dart", "Firebase"],
-    imageUrl: ategoImg,
-  },
-  {
-    title: "Sitoluhuta Village Website",
-    description:
-      "Created a website for a village to showcase its information and potential attractions to the public.",
-    tags: ["Wordpress", "HTML", "CSS"],
-    imageUrl: desasitoluhutaImg,
-  },
-] as const;
-
-export const skillsData = [
-  "Java",
-  "Spring Boot",
-  "JDBC",
-  "MyBatis",
-  "SQL",
-  "HTML",
-  "CSS",
-  "Node.js",
-  "Angular",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind",
-  "Git",
-  "Python",
-  "Flutter",
-  "Dart",
-  "Firebase",
-  "Figma",
-] as const;
+export const CONTACT_EMAIL = "bagasyudhistirafauzi@gmail.com";
+export const GITHUB_URL = "https://github.com/bagasyudhistira";
+export const LINKEDIN_URL = "https://linkedin.com/in/bagasyudhistira";

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "intro": {
+    "hello": "Hello, I'm Bagas.",
+    "role": "Back-end Developer",
+    "body": "I build enterprise back-end systems with Java and Spring, most recently for digital banking and government platforms. I care about data integrity, query performance, and systems that stay predictable under load.",
+    "contactCta": "Contact me here",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I am a back-end developer with a degree in Information Engineering from Universitas Gadjah Mada. Most of my work lives in Java and Spring, backed by PostgreSQL — building the parts of an application that have to stay correct when nobody is watching.",
+    "p2": "Outside of work I am an avid gamer and a movie enthusiast who values time with friends and family. I am also learning more about investment instruments — stocks, bonds, and mutual funds — to understand financial markets a little better."
+  },
+  "projects": {
+    "title": "Projects",
+    "confidential": "Client work under NDA — no screenshots published.",
+    "nda": "NDA"
+  },
+  "skills": {
+    "title": "Skills",
+    "coreLabel": "Day to day",
+    "familiarLabel": "Also familiar with"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "contact": {
+    "title": "Contact me",
+    "lead": "Reach me directly at",
+    "or": "or through this form.",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "submit": "Send message",
+    "success": "Your message has been sent",
+    "error": "Something went wrong. Please try again or email me directly."
+  },
+  "footer": {
+    "copyright": "© {year} Bagas Yudhistira Fauzi. All rights reserved.",
+    "builtWith": "Built with Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion and Resend. Deployed on Vercel."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "id": "Indonesia",
+    "switchTo": "Baca dalam Bahasa Indonesia"
+  },
+  "metadata": {
+    "title": "Bagas Yudhistira Fauzi — Back-end Developer",
+    "description": "Back-end developer building enterprise systems with Java, Spring and PostgreSQL for digital banking and government clients."
+  }
+}
