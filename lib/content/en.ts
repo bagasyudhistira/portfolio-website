@@ -63,7 +63,7 @@ export const en: SiteContent = {
       org: "Capstone project, Universitas Gadjah Mada",
       period: "2022 – 2023",
       summary:
-        "Web-based administration system for hospital referral flows between healthcare facilities. Built as the final capstone project of my degree; source is not public.",
+        "Web-based administration system for hospital referral flows between healthcare facilities. Capstone project of my degree; the source is not public.",
       bullets: [
         "Modelled the referral workflow end to end, from patient record to receiving facility",
         "Implemented the administration side as a full-stack web application",

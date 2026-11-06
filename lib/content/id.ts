@@ -63,7 +63,7 @@ export const id: SiteContent = {
       org: "Proyek capstone, Universitas Gadjah Mada",
       period: "2022 – 2023",
       summary:
-        "Sistem administrasi berbasis web untuk alur rujukan antar fasilitas kesehatan. Dibangun sebagai proyek capstone akhir masa studi; kode tidak dipublikasikan.",
+        "Sistem administrasi berbasis web untuk alur rujukan antar fasilitas kesehatan. Proyek capstone masa studi; kode tidak dipublikasikan.",
       bullets: [
         "Memodelkan alur rujukan dari rekam pasien hingga fasilitas penerima",
         "Membangun sisi administrasi sebagai aplikasi web full-stack",
