@@ -3,11 +3,9 @@
 import React from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
 import { getContent } from "@/lib/content";
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills", 0.6);
   const t = useTranslations("skills");
   const locale = useLocale();
   const { skills } = getContent(locale);
@@ -18,7 +16,7 @@ export default function Skills() {
   ];
 
   return (
-    <section ref={ref} id="skills" className="scroll-mt-24">
+    <section id="skills" className="scroll-mt-24">
       <div className="mb-3 flex items-end justify-between gap-3">
         <h3 className="text-[0.95rem] font-semibold tracking-tight">
           {t("title")}

@@ -5,6 +5,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Rail from "@/components/rail";
+import FloatingNav from "@/components/floating-nav";
+import ScrollSpy from "@/components/scroll-spy";
 import ThemeContextProvider from "@/context/theme-context";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { routing } from "@/i18n/routing";
@@ -74,9 +76,11 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <ThemeContextProvider>
             <ActiveSectionContextProvider>
+              <FloatingNav />
+              <ScrollSpy />
               <div className="lg:grid lg:grid-cols-[320px_1fr]">
                 <Rail />
-                <main className="mx-auto w-full max-w-[900px] px-5 pb-16 pt-8 sm:px-8 lg:px-12 lg:pt-11">
+                <main className="mx-auto w-full max-w-[900px] px-5 pb-16 pt-24 sm:px-8 lg:px-12 lg:pt-24">
                   {children}
                 </main>
               </div>

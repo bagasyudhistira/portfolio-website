@@ -3,18 +3,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
-import { useSectionInView } from "@/lib/hooks";
 import { getContent } from "@/lib/content";
 
 export default function Profile() {
-  const { ref } = useSectionInView("About", 0.5);
   const t = useTranslations("profile");
   const ta = useTranslations("about");
   const locale = useLocale();
   const { hero } = getContent(locale);
 
   return (
-    <section ref={ref} id="about" className="scroll-mt-24">
+    <section id="about" className="scroll-mt-24">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

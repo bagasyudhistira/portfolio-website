@@ -3,19 +3,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL } from "@/lib/data";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 0.6);
   const t = useTranslations("contact");
 
   return (
     <motion.section
-      ref={ref}
+     
       id="contact"
       className="scroll-mt-24"
       initial={{ opacity: 0, y: 12 }}

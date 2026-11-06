@@ -128,15 +128,6 @@ export const id: SiteContent = {
       icon: "map",
     },
     {
-      title: "Sarjana Teknik, Teknik Informasi",
-      org: "Universitas Gadjah Mada",
-      location: "Yogyakarta, Indonesia",
-      period: "2019 – 2024",
-      description:
-        "Lulus cum laude dengan IPK 3,51/4,00. Skripsi tentang aplikasi presensi berbasis GPS; capstone tentang sistem rujukan rumah sakit.",
-      icon: "graduation",
-    },
-    {
       title: "Kepala Divisi Advokasi",
       org: "KMTETI UGM",
       location: "Yogyakarta, Indonesia",
@@ -144,6 +135,15 @@ export const id: SiteContent = {
       description:
         "Memperjuangkan aspirasi kesejahteraan mahasiswa — pembiayaan, fasilitas, akademik, dan kebijakan — kepada pemangku kepentingan departemen.",
       icon: "handshake",
+    },
+    {
+      title: "Sarjana Teknik, Teknik Informasi",
+      org: "Universitas Gadjah Mada",
+      location: "Yogyakarta, Indonesia",
+      period: "Agu 2019 – Jan 2024",
+      description:
+        "Lulus cum laude dengan IPK 3,51/4,00. Skripsi tentang aplikasi presensi berbasis GPS; capstone tentang sistem rujukan rumah sakit.",
+      icon: "graduation",
     },
   ],
   skills: {

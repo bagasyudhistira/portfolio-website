@@ -128,15 +128,6 @@ export const en: SiteContent = {
       icon: "map",
     },
     {
-      title: "Bachelor of Engineering, Information Engineering",
-      org: "Universitas Gadjah Mada",
-      location: "Yogyakarta, Indonesia",
-      period: "2019 – 2024",
-      description:
-        "Graduated cum laude with a GPA of 3.51/4.00. Thesis on a GPS-based attendance application; capstone on a hospital referral system.",
-      icon: "graduation",
-    },
-    {
       title: "Head of Advocacy Division",
       org: "KMTETI UGM",
       location: "Yogyakarta, Indonesia",
@@ -144,6 +135,15 @@ export const en: SiteContent = {
       description:
         "Represented student welfare concerns — financing, facilities, academics and policy — to department stakeholders.",
       icon: "handshake",
+    },
+    {
+      title: "Bachelor of Engineering, Information Engineering",
+      org: "Universitas Gadjah Mada",
+      location: "Yogyakarta, Indonesia",
+      period: "Aug 2019 – Jan 2024",
+      description:
+        "Graduated cum laude with a GPA of 3.51/4.00. Thesis on a GPS-based attendance application; capstone on a hospital referral system.",
+      icon: "graduation",
     },
   ],
   skills: {

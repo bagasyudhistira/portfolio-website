@@ -6,7 +6,6 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaCloud, FaHandshake } from "react-icons/fa";
 import { LuGraduationCap, LuMap } from "react-icons/lu";
 import { useLocale, useTranslations } from "next-intl";
-import { useSectionInView } from "@/lib/hooks";
 import { getContent, type ExperienceIcon } from "@/lib/content";
 
 const icons: Record<ExperienceIcon, React.ReactElement> = {
@@ -18,13 +17,12 @@ const icons: Record<ExperienceIcon, React.ReactElement> = {
 };
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience", 0.4);
   const t = useTranslations("experience");
   const locale = useLocale();
   const { experiences } = getContent(locale);
 
   return (
-    <section ref={ref} id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-24">
       <div className="mb-4 flex items-end justify-between gap-3">
         <h3 className="text-[0.95rem] font-semibold tracking-tight">
           {t("title")}
