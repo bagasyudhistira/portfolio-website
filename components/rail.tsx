@@ -21,12 +21,13 @@ export default function Rail() {
       className="border-line bg-panel/60 flex flex-col gap-5 border-b px-6 pb-5 pt-20 lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r lg:px-7 lg:py-8"
     >
       <div className="flex items-center gap-4 lg:block">
-        <div className="border-line relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border">
+        <div className="border-line relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border lg:h-24 lg:w-24">
           <Image
             src={personPicture}
             alt={hero.name}
-            width={64}
-            height={64}
+            width={128}
+            height={128}
+            sizes="(min-width: 1024px) 96px, 64px"
             priority
             className="h-full w-full object-cover"
           />
