@@ -149,8 +149,8 @@ export const id: SiteContent = {
   skills: {
     core: [
       "Java",
+      "Spring",
       "Spring Boot",
-      "Spring MVC",
       "Thymeleaf",
       "MyBatis",
       "JDBC",
