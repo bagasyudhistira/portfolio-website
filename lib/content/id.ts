@@ -6,7 +6,7 @@ export const id: SiteContent = {
   hero: {
     name: "Bagas Yudhistira Fauzi",
     metrics: [
-      { value: "2 tahun", label: "membangun back-end enterprise" },
+      { value: "", label: "membangun back-end enterprise", dynamic: "careerYears" },
       { value: "3", label: "sistem di sektor keuangan dan pemerintahan" },
       { value: "3,51", label: "IPK, cum laude UGM" },
     ],
@@ -20,11 +20,11 @@ export const id: SiteContent = {
       summary:
         "Pekerjaan back-end dan full-stack pada modul operasional inti CRM korporat yang dipakai salah satu bank digital terkemuka di Indonesia.",
       bullets: [
-        "Membangun modul manajemen tugas dan alur CRUD parameter dengan Java Spring dan PostgreSQL",
-        "Merancang antarmuka server-side rendering memakai Spring dan Thymeleaf untuk menekan beban state di klien",
+        "Membangun modul manajemen tugas dan alur CRUD parameter dengan Java, Spring MVC, dan PostgreSQL",
+        "Merancang antarmuka server-side rendering memakai Spring MVC dan Thymeleaf untuk menekan beban state di klien",
         "Memperkuat validasi input dan penanganan galat pada alur parameter agar integritas data terjaga",
       ],
-      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
+      stack: ["Java", "Spring MVC", "Thymeleaf", "PostgreSQL", "JavaScript", "HTML"],
       confidential: true,
     },
     {
@@ -39,7 +39,7 @@ export const id: SiteContent = {
         "Membangun modul siklus hidup dokumen dengan kontrol akses, kategorisasi otomatis, dan penanganan konten yang aman",
         "Menjaga konsumsi sumber daya tetap ringan dengan rendering di sisi server alih-alih lalu lintas API berulang",
       ],
-      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
+      stack: ["Java", "Spring MVC", "Thymeleaf", "PostgreSQL", "JavaScript", "HTML"],
       confidential: true,
     },
     {
@@ -54,7 +54,7 @@ export const id: SiteContent = {
         "Menerapkan endpoint berthroughput tinggi dengan validasi ketat, pemetaan DTO, dan lapisan data MyBatis",
         "Menala query produksi dan menelusuri masalah langsung untuk menekan beban server serta menjaga akurasi data",
       ],
-      stack: ["Spring Boot", "MyBatis", "JasperReports", "SQL"],
+      stack: ["Spring Boot", "MyBatis", "JasperReports", "PostgreSQL"],
       confidential: true,
     },
     {
@@ -82,7 +82,7 @@ export const id: SiteContent = {
         "Membangun back-end dengan Spring Boot: alur rujukan dari rekam pasien hingga fasilitas penerima",
         "Menerapkan model data administrasi beserta logika sisi server di belakangnya",
       ],
-      stack: ["Spring Boot", "Back-end", "Basis data"],
+      stack: ["Spring Boot", "Back-end", "Apache Cassandra"],
     },
     {
       slug: "sitoluhuta",
@@ -149,20 +149,24 @@ export const id: SiteContent = {
   skills: {
     core: [
       "Java",
-      "Spring",
+      "Spring MVC",
       "Spring Boot",
-      "Thymeleaf",
       "MyBatis",
-      "JDBC",
+      "Thymeleaf",
       "PostgreSQL",
+      "JavaScript",
+      "HTML",
       "Penalaan SQL",
-      "JasperReports",
-      "REST API",
       "Git",
-      "Python",
     ],
     familiar: [
-      "JavaScript",
+      "JDBC",
+      "JasperReports",
+      "REST API",
+      "Apache Cassandra",
+      "WordPress",
+      "CSS",
+      "Python",
       "TypeScript",
       "React",
       "Next.js",

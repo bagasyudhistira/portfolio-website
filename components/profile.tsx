@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { getContent } from "@/lib/content";
+import CareerDuration from "./career-duration";
 
 export default function Profile() {
   const t = useTranslations("profile");
@@ -46,7 +47,7 @@ export default function Profile() {
             className="border-line bg-panel flex-1 basis-[150px] rounded-xl border px-4 py-3.5"
           >
             <dd className="text-[1.25rem] font-semibold tracking-tight">
-              {metric.value}
+              {metric.dynamic === "careerYears" ? <CareerDuration /> : metric.value}
             </dd>
             <dt className="text-dim font-mono text-[0.66rem] uppercase tracking-[0.09em]">
               {metric.label}
