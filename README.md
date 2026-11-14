@@ -30,13 +30,25 @@ Run `npm audit` to check current dependency advisories. Security overrides pin p
 
 ## Environment
 
-The contact form sends mail through Resend. Set this in `.env.local` (and in the Vercel project settings for production):
+The contact form uses Resend, Cloudflare Turnstile, and Upstash Redis. Configure these in `.env.local` and Vercel project settings (never commit secret values):
 
-```
-RESEND_API_KEY=re_...
+```dotenv
+RESEND_API_KEY=your-resend-key
+NEXT_PUBLIC_TURNSTILE_SITE_KEY=your-public-site-key
+TURNSTILE_SECRET_KEY=your-secret-key
+TURNSTILE_ALLOWED_HOSTNAMES=your-domain.example,your-project.vercel.app
+UPSTASH_REDIS_REST_URL=https://your-database.upstash.io
+UPSTASH_REDIS_REST_TOKEN=your-redis-token
+CONTACT_RATE_LIMIT_SECRET=your-random-secret-at-least-32-characters
 ```
 
-Without the key the page still renders; submitting the form returns an error toast.
+Create a Turnstile widget with your deployed hostnames and an Upstash Redis database; copy the Redis REST credentials, not the Redis connection URL. `TURNSTILE_ALLOWED_HOSTNAMES` contains exact hostnames without schemes or paths. Include each preview hostname you want to support. Only the `NEXT_PUBLIC_` site key is public; all other protection credentials remain server-side. Rebuild/redeploy after configuring the public site key.
+
+Before calling Resend, the server validates input, verifies the single-use Turnstile token with action `contact` and an allowed hostname, and enforces atomic Redis counters: 3 attempts per IP per 15 minutes starting with the first attempt, and 50 send reservations globally per UTC day. Failed challenges count toward the IP limit; failed email deliveries consume the daily budget. Redis also atomically reserves each hashed challenge token for 10 minutes to reject concurrent replays independently of Cloudflare. IP addresses are HMAC-hashed in Redis with expiring keys. Keep the hash secret stable: rotating it resets IP counters.
+
+Production trusts only Vercel's overwritten `x-vercel-forwarded-for` header; missing/invalid IPs block sending. Local development uses a loopback bucket. Other hosting providers require a trusted-IP integration before enabling sending. The form fails closed on missing configuration, network errors, failed verification, or exhausted limits; the direct-email link remains available. These controls reduce abuse, but a distributed attack can still exhaust the global budget.
+
+For local testing, use Cloudflare's documented Turnstile test keys and a separate Redis database, allowing `localhost`; never deploy test keys to production. Run `node --test lib/contact-protection.test.mjs` for mocked protection tests that do not send emails or contact services. No credentials are needed for lint, tests, or build.
 
 Set `NEXT_PUBLIC_SITE_URL` to your production origin (for example, `https://your-domain.example`). It is used for canonical URLs, localized sitemap entries, robots configuration, and social-image URLs. When omitted, the existing Vercel production URL is used. Rebuild after changing it.
 

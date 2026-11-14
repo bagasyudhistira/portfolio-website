@@ -52,6 +52,7 @@
     "emailPlaceholder": "Your email",
     "messagePlaceholder": "Your message",
     "submit": "Send message",
+    "verification": "Complete the verification to send. If it is unavailable, please email me directly.",
     "success": "Your message has been sent",
     "error": "Something went wrong. Please try again or email me directly."
   },
