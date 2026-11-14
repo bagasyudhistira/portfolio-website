@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "skipToContent": "Skip to content",
     "about": "Profile",
     "projects": "Projects",
     "skills": "Stack",
@@ -18,6 +19,7 @@
     "headlineStart": "Back-ends that stay",
     "headlineAccent": "correct",
     "headlineEnd": "long after the demo.",
+    "careerYears": "{count, plural, one {# yr} other {# yrs}}",
     "englishValue": "TOEFL 547",
     "englishLabel": "English"
   },

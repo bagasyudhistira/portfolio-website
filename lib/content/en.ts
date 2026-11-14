@@ -6,7 +6,7 @@ export const en: SiteContent = {
   hero: {
     name: "Bagas Yudhistira Fauzi",
     metrics: [
-      { value: "2 yrs", label: "building enterprise back-end" },
+      { value: "", label: "building enterprise back-end", dynamic: "careerYears" },
       { value: "3", label: "systems shipped in finance and government" },
       { value: "3.51", label: "GPA, cum laude at UGM" },
     ],
@@ -20,11 +20,11 @@ export const en: SiteContent = {
       summary:
         "Back-end and full-stack work on the core operational modules of a corporate CRM used by a leading Indonesian digital bank.",
       bullets: [
-        "Developed task-management and parameter CRUD flows in Java Spring, backed by PostgreSQL",
-        "Architected server-rendered interfaces with Spring and Thymeleaf, cutting client-side state overhead",
+        "Developed task-management and parameter CRUD flows in Java with Spring MVC, backed by PostgreSQL",
+        "Architected server-rendered interfaces with Spring MVC and Thymeleaf, cutting client-side state overhead",
         "Hardened input validation and error handling across parameter workflows to protect data integrity",
       ],
-      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
+      stack: ["Java", "Spring MVC", "Thymeleaf", "PostgreSQL", "JavaScript", "HTML"],
       confidential: true,
     },
     {
@@ -39,7 +39,7 @@ export const en: SiteContent = {
         "Built document lifecycle modules with access control, automated categorisation and secure content handling",
         "Kept the service light on resources by rendering on the server instead of shipping API round-trips",
       ],
-      stack: ["Spring", "Thymeleaf", "PostgreSQL"],
+      stack: ["Java", "Spring MVC", "Thymeleaf", "PostgreSQL", "JavaScript", "HTML"],
       confidential: true,
     },
     {
@@ -54,7 +54,7 @@ export const en: SiteContent = {
         "Implemented high-throughput endpoints with strict validation, DTO mapping and a MyBatis data layer",
         "Tuned production queries and debugged live issues to cut server load and protect data accuracy",
       ],
-      stack: ["Spring Boot", "MyBatis", "JasperReports", "SQL"],
+      stack: ["Spring Boot", "MyBatis", "JasperReports", "PostgreSQL"],
       confidential: true,
     },
     {
@@ -82,7 +82,7 @@ export const en: SiteContent = {
         "Built the back-end with Spring Boot: the referral workflow from patient record to receiving facility",
         "Implemented the administration data model and the server-side logic behind it",
       ],
-      stack: ["Spring Boot", "Back-end", "Database"],
+      stack: ["Spring Boot", "Back-end", "Apache Cassandra"],
     },
     {
       slug: "sitoluhuta",
@@ -149,20 +149,24 @@ export const en: SiteContent = {
   skills: {
     core: [
       "Java",
-      "Spring",
+      "Spring MVC",
       "Spring Boot",
-      "Thymeleaf",
       "MyBatis",
-      "JDBC",
+      "Thymeleaf",
       "PostgreSQL",
+      "JavaScript",
+      "HTML",
       "SQL tuning",
-      "JasperReports",
-      "REST API",
       "Git",
-      "Python",
     ],
     familiar: [
-      "JavaScript",
+      "JDBC",
+      "JasperReports",
+      "REST API",
+      "Apache Cassandra",
+      "WordPress",
+      "CSS",
+      "Python",
       "TypeScript",
       "React",
       "Next.js",

@@ -29,6 +29,7 @@ export type ExperienceItem = {
 export type Metric = {
   value: string;
   label: string;
+  dynamic?: "careerYears";
 };
 
 export type SiteContent = {
