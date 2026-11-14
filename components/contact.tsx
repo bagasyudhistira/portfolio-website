@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import ContactChallenge from "./contact-challenge";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { sendEmail } from "@/actions/sendEmail";
@@ -10,6 +11,8 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const t = useTranslations("contact");
+  const [token, setToken] = useState("");
+  const [resetKey, setResetKey] = useState(0);
 
   return (
     <motion.section
@@ -43,12 +46,20 @@ export default function Contact() {
       <form
         className="border-line bg-panel mt-5 flex max-w-[38rem] flex-col rounded-2xl border p-4"
         action={async (formData) => {
-          const { error } = await sendEmail(formData);
-          if (error) {
+          try {
+            formData.set("cf-turnstile-response", token);
+            const result = await sendEmail(formData);
+            if ("error" in result) {
+              toast.error(t("error"));
+              return;
+            }
+            toast.success(t("success"));
+          } catch {
             toast.error(t("error"));
-            return;
+          } finally {
+            setToken("");
+            setResetKey((value) => value + 1);
           }
-          toast.success(t("success"));
         }}
       >
         <input
@@ -56,7 +67,7 @@ export default function Contact() {
           name="senderEmail"
           type="email"
           required
-          maxLength={500}
+          maxLength={254}
           placeholder={t("emailPlaceholder")}
           aria-label={t("emailPlaceholder")}
         />
@@ -68,8 +79,12 @@ export default function Contact() {
           placeholder={t("messagePlaceholder")}
           aria-label={t("messagePlaceholder")}
         />
+        <ContactChallenge onVerify={setToken} resetKey={resetKey} />
+        <p className="text-muted mb-3 text-[0.8rem]" role="status">
+          {t("verification")}
+        </p>
         <div className="flex flex-wrap items-center gap-3">
-          <SubmitBtn />
+          <SubmitBtn disabled={!token} />
           <div className="text-dim flex gap-3 font-mono text-[0.72rem]">
             <a className="hover:text-accent transition" href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
               LinkedIn

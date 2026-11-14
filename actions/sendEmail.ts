@@ -1,33 +1,20 @@
 "use server";
 
-import { validateString, getErrorMessage } from "@/lib/utils";
+import { headers } from "next/headers";
+import { getContactIp, getProtectionConfig, protectContact, validateContact } from "@/lib/contact-protection";
 import { Resend } from "resend";
 import { contactEmailHtml, contactEmailText } from "@/lib/email-template";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get("senderEmail");
-  const message = formData.get("message");
-
-  if (!validateString(senderEmail, 500)) {
-    return {
-      error: "Invalid sender email",
-    };
-  }
-
-  if (!validateString(message, 5000)) {
-    return {
-      error: "Invalid message",
-    };
-  }
-
-  const payload = {
-    message: message as string,
-    senderEmail: senderEmail as string,
-  };
+  const failure = { error: "Unable to send message. Please email directly." };
+  const payload = validateContact(formData);
+  const config = getProtectionConfig();
+  if (!payload || !config || !process.env.RESEND_API_KEY) return failure;
 
   try {
+    const ip = getContactIp(await headers());
+    if (!ip || !await protectContact(payload.token, ip, config)) return failure;
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: "Contact Form <onboard@resend.dev>",
       to: "bagasyudhistirafauzi@gmail.com",
@@ -37,14 +24,9 @@ export const sendEmail = async (formData: FormData) => {
       text: contactEmailText(payload),
     });
 
-    if (error) {
-      return { error: error.message };
-    }
-
+    if (error) return failure;
     return { data };
-  } catch (error: unknown) {
-    return {
-      error: getErrorMessage(error),
-    };
+  } catch {
+    return failure;
   }
 };

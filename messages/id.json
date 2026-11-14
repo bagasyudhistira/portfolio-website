@@ -52,6 +52,7 @@
     "emailPlaceholder": "Email Anda",
     "messagePlaceholder": "Pesan Anda",
     "submit": "Kirim pesan",
+    "verification": "Selesaikan verifikasi untuk mengirim. Jika tidak tersedia, silakan kirim email langsung.",
     "success": "Pesan Anda sudah terkirim",
     "error": "Terjadi kesalahan. Silakan coba lagi atau kirim email langsung."
   },
