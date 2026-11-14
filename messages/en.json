@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "skipToContent": "Skip to content",
     "about": "Profile",
     "projects": "Projects",
     "skills": "Stack",
